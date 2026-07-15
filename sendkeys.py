@@ -79,4 +79,4 @@ if __name__ == '__main__':
         time.sleep(0.1)
 
     # send ENTER
-    send_enter()
+    # send_enter()
