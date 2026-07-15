@@ -1,7 +1,9 @@
 NULL =  0x00
 ENTER = 0x28
 SHIFT = 0x02 # 
+# ALTGR = 0x05 # 00000101 = 0: Left ctrl, 2 = Left alt
 ALTGR = 0x64 # 01000000
+# ALTGR = 0x50 # 01010000 Right alt + right ctrl
 
 
 # layout format: (keycode, modifier)
