@@ -10,6 +10,7 @@
 
 # LINKS
 # - https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
+# - https://www.rmedgar.com/blog/using-rpi-zero-as-keyboard-send-reports/
 
 
 import keycodes
