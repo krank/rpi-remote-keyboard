@@ -1,6 +1,8 @@
 Raspberry Pi Remote Keyboard
 ============================
 
+This is a fork of the [original project](https://github.com/n0rc/rpi-remote-keyboard), that mostly adds a (mostly) complete swedish keyboard layout.
+
 This is some Bash and Python code to setup and run a **Raspberry Pi Zero W** as a USB HID gadget, e.g. to use it as an USB keyboard with remote access via wifi.
 
 The Pi is back-powered over the USB port of the connected computer and doesn't need an additional power supply.
@@ -23,7 +25,9 @@ The Pi is back-powered over the USB port of the connected computer and doesn't n
 ```
 
 #### Credits
+* https://github.com/n0rc/rpi-remote-keyboard
 * https://github.com/girst/hardpass-sendHID
+* https://www.rmedgar.com/blog/using-rpi-zero-as-keyboard-send-reports/
 
 #### Specs
 * https://www.usb.org/sites/default/files/documents/hid1_11.pdf
