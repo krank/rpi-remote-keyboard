@@ -1,6 +1,7 @@
 NULL =  0x00
 ENTER = 0x28
-SHIFT = 0x02
+SHIFT = 0x02 # 
+ALTGR = 0x05 # 00000101 = 0: Left ctrl, 2 = Left alt
 
 # layout format: (keycode, modifier)
 # US keyboard layout
@@ -132,13 +133,13 @@ SE = {
     'v':  (0x19, NULL), 'V':  (0x19, SHIFT),
     'w':  (0x1a, NULL), 'W':  (0x1a, SHIFT),
     'x':  (0x1b, NULL), 'X':  (0x1b, SHIFT),
-    'y':  (0x1d, NULL), 'Y':  (0x1d, SHIFT),
-    'z':  (0x1c, NULL), 'Z':  (0x1c, SHIFT),
+    'y':  (0x1c, NULL), 'Y':  (0x1c, SHIFT),
+    'z':  (0x1d, NULL), 'Z':  (0x1d, SHIFT),
 
     '1':  (0x1e, NULL), '!':  (0x1e, SHIFT),
     '2':  (0x1f, NULL), '"':  (0x1f, SHIFT),
     '3':  (0x20, NULL), '#':  (0x20, SHIFT),
-    '4':  (0x21, NULL), '¤':  (0x21, SHIFT),
+    '4':  (0x21, NULL), '¤':  (0x21, SHIFT), '$': (0x21, ALTGR),
     '5':  (0x22, NULL), '%':  (0x22, SHIFT),
     '6':  (0x23, NULL), '&':  (0x23, SHIFT),
     '7':  (0x24, NULL), '/':  (0x24, SHIFT),
@@ -151,16 +152,19 @@ SE = {
     'å':  (0x2f, NULL), 'Å':  (0x2f, SHIFT),
     'ä':  (0x34, NULL), 'Ä':  (0x34, SHIFT),
     'ö':  (0x33, NULL), 'Ö':  (0x33, SHIFT),
-    '\'':  (0x31, NULL),  '*':  (0x31, SHIFT, True),
+    '\'':  (0x31, NULL),  '*':  (0x31, SHIFT),
     '.':  (0x37, NULL), ':':  (0x37, SHIFT),
     ',':  (0x36, NULL), ';':  (0x36, SHIFT),
     '-':  (0x38, NULL), '_':  (0x38, SHIFT),
     '+':  (0x2d, NULL), '?':  (0x2d, SHIFT),
     '<':  (0x64, NULL), '>':  (0x64, SHIFT),
+    
 
     # Composites
     '¨':  (0x30, NULL, True),  '^':  (0x30, SHIFT, True),
     '´':  (0x31, NULL, True),
+
+
 
     # '§'
 
