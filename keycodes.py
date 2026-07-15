@@ -1,7 +1,8 @@
 NULL =  0x00
 ENTER = 0x28
 SHIFT = 0x02 # 
-ALTGR = 0x05 # 00000101 = 0: Left ctrl, 2 = Left alt
+ALTGR = 0x64 # 01000000
+
 
 # layout format: (keycode, modifier)
 # US keyboard layout

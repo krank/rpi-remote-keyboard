@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 # (c)2020 n0rc
 
+#TODO:
+# - config file for persistent options
+# - move keyboard layouts to separate file (json?)
+# - customizable delay between sends
+# - api endpoint
+# - simple ui
+
+# LINKS
+# - https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf
+
+
 import keycodes
 import os
 import re
