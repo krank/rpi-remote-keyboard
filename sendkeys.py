@@ -14,13 +14,19 @@ from argparse import ArgumentParser
 report_keyrelease = bytes(8)
 
 
-def write_report(keycode, modifier=keycodes.NULL):
+def write_report(keycode, modifier=keycodes.NULL, dead_key=false):
     report_keypress = bytearray(8)
     report_keypress[0] = modifier
     report_keypress[2] = keycode
     with open('/dev/hidg0', 'rb+') as fd:
         fd.write(report_keypress)       # send key press
         fd.write(report_keyrelease)     # send key release
+
+        if (dead_key):
+            report_space = bytearray(8)
+            report_space[2] = 0x2c
+            fd.write(report_space)
+            fd.write(report_keyrelease)
 
 
 def send_enter():
