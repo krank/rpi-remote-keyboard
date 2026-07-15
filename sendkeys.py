@@ -14,7 +14,7 @@ from argparse import ArgumentParser
 report_keyrelease = bytes(8)
 
 
-def write_report(keycode, modifier=keycodes.NULL, dead_key=false):
+def write_report(keycode, modifier=keycodes.NULL, dead_key=False):
     report_keypress = bytearray(8)
     report_keypress[0] = modifier
     report_keypress[2] = keycode
