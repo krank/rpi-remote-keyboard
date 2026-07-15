@@ -43,11 +43,11 @@ def send_key(key, codelist):
 if __name__ == '__main__':
 
     parser = ArgumentParser()
-    parser.add_argument('-l', '--layout', help='set keyboard layout ("de", "us"), default is "us"' , default='us')
+    parser.add_argument('-l', '--layout', help='set keyboard layout ("de", "us", "se"), default is "us"' , default='us')
     parser.add_argument('-p', '--password', help='enable password entry mode', action='store_true')
     args, rem = parser.parse_known_args()
 
-    if not re.match(r'^(us|de)$', args.layout) or not args.password and not rem:
+    if not re.match(r'^(us|de|se)$', args.layout) or not args.password and not rem:
         parser.print_help()
         sys.exit(0)
 
