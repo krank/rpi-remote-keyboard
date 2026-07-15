@@ -108,12 +108,13 @@ DE = {
     '-':  (0x38, NULL), '_':  (0x38, SHIFT)
 }
 
+# SE keyboard layout
 SE = {
     'a':  (0x04, NULL), 'A':  (0x04, SHIFT),
     'b':  (0x05, NULL), 'B':  (0x05, SHIFT), 
     'c':  (0x06, NULL), 'C':  (0x06, SHIFT),
     'd':  (0x07, NULL), 'D':  (0x07, SHIFT),
-    'e':  (0x08, NULL), 'E':  (0x08, SHIFT),
+    'e':  (0x08, NULL), 'E':  (0x08, SHIFT), '€': (0x08, ALTGR),
     'f':  (0x09, NULL), 'F':  (0x09, SHIFT),
     'g':  (0x0a, NULL), 'G':  (0x0a, SHIFT),
     'h':  (0x0b, NULL), 'H':  (0x0b, SHIFT),
@@ -137,15 +138,15 @@ SE = {
     'z':  (0x1d, NULL), 'Z':  (0x1d, SHIFT),
 
     '1':  (0x1e, NULL), '!':  (0x1e, SHIFT),
-    '2':  (0x1f, NULL), '"':  (0x1f, SHIFT),
-    '3':  (0x20, NULL), '#':  (0x20, SHIFT),
+    '2':  (0x1f, NULL), '"':  (0x1f, SHIFT), '@': (0x1f, ALTGR),
+    '3':  (0x20, NULL), '#':  (0x20, SHIFT), '£': (0x1f, ALTGR),
     '4':  (0x21, NULL), '¤':  (0x21, SHIFT), '$': (0x21, ALTGR),
     '5':  (0x22, NULL), '%':  (0x22, SHIFT),
     '6':  (0x23, NULL), '&':  (0x23, SHIFT),
-    '7':  (0x24, NULL), '/':  (0x24, SHIFT),
-    '8':  (0x25, NULL), '(':  (0x25, SHIFT),
-    '9':  (0x26, NULL), ')':  (0x26, SHIFT),
-    '0':  (0x27, NULL), '=':  (0x27, SHIFT),
+    '7':  (0x24, NULL), '/':  (0x24, SHIFT), '{': (0x24, ALTGR),
+    '8':  (0x25, NULL), '(':  (0x25, SHIFT), '[': (0x25, ALTGR),
+    '9':  (0x26, NULL), ')':  (0x26, SHIFT), ']': (0x26, ALTGR),
+    '0':  (0x27, NULL), '=':  (0x27, SHIFT), '}': (0x27, ALTGR),
 
     # Special characters
     ' ':  (0x2c, NULL),
@@ -156,27 +157,12 @@ SE = {
     '.':  (0x37, NULL), ':':  (0x37, SHIFT),
     ',':  (0x36, NULL), ';':  (0x36, SHIFT),
     '-':  (0x38, NULL), '_':  (0x38, SHIFT),
-    '+':  (0x2d, NULL), '?':  (0x2d, SHIFT),
-    '<':  (0x64, NULL), '>':  (0x64, SHIFT),
+    '+':  (0x2d, NULL), '?':  (0x2d, SHIFT), '\\': (0x2d, ALTGR),
+    '<':  (0x64, NULL), '>':  (0x64, SHIFT), '|': (0x64, ALTGR),
+    '§':  (0x35, NULL), '½': (0x35, SHIFT),
     
 
-    # Composites
-    '¨':  (0x30, NULL, True),  '^':  (0x30, SHIFT, True),
-    '´':  (0x31, NULL, True),
-
-
-
-    # '§'
-
-    # 'ß':  (0x2d, NULL), '?':  (0x2d, SHIFT),
-    # '´':  (0x2e, NULL), '`':  (0x2e, SHIFT),
-    # 'ü':  (0x2f, NULL), 'Ü':  (0x2f, SHIFT),
-    # '+':  (0x30, NULL), '*':  (0x30, SHIFT),
-    # '#':  (0x31, NULL), '\'': (0x31, SHIFT),
-    # 'ö':  (0x33, NULL), 'Ö':  (0x33, SHIFT),
-    # 'ä':  (0x34, NULL), 'Ä':  (0x34, SHIFT),
-    # '^':  (0x35, NULL), '°':  (0x35, SHIFT),
-    # ',':  (0x36, NULL), ';':  (0x36, SHIFT),
-    # '.':  (0x37, NULL), ':':  (0x37, SHIFT),
-    # '-':  (0x38, NULL), '_':  (0x38, SHIFT)
+    # Dead keys
+    '¨':  (0x30, NULL, True),  '^':  (0x30, SHIFT, True), '~': (0x30, ALTGR, True),
+    '´':  (0x31, NULL, True)
 }
