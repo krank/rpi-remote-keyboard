@@ -145,17 +145,23 @@ SE = {
     '8':  (0x25, NULL), '(':  (0x25, SHIFT),
     '9':  (0x26, NULL), ')':  (0x26, SHIFT),
     '0':  (0x27, NULL), '=':  (0x27, SHIFT),
-    ' ':  (0x2c, NULL),
 
+    # Special characters
+    ' ':  (0x2c, NULL),
     'å':  (0x2f, NULL), 'Å':  (0x2f, SHIFT),
     'ä':  (0x34, NULL), 'Ä':  (0x34, SHIFT),
     'ö':  (0x33, NULL), 'Ö':  (0x33, SHIFT),
-    '¨':  (0x31, NULL, True),  '^':  (0x31, SHIFT, True),
-    # '\'':  (),
+    '\'':  (0x31, NULL),  '*':  (0x31, SHIFT, True),
     '.':  (0x37, NULL), ':':  (0x37, SHIFT),
     ',':  (0x36, NULL), ';':  (0x36, SHIFT),
     '-':  (0x38, NULL), '_':  (0x38, SHIFT),
-    '<':  (0x64, NULL), '>':  (0x64, SHIFT)
+    '+':  (0x2d, NULL), '?':  (0x2d, SHIFT),
+    '<':  (0x64, NULL), '>':  (0x64, SHIFT),
+
+    # Composites
+    '¨':  (0x30, NULL, True),  '^':  (0x30, SHIFT, True),
+    '´':  (0x31, NULL, True),
+
     # '§'
 
     # 'ß':  (0x2d, NULL), '?':  (0x2d, SHIFT),
